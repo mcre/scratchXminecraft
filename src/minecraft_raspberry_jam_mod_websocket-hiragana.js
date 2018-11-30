@@ -95,12 +95,12 @@
     }
 
     function setBlock(x,y,z,block){
-        var opt = [Math.round(x),Math.round(y),Math.round(z),block].join();
+        var opt = [x,y,z,block].join();
         mcSend("world.setBlock(" + opt + ")");
     }
 
     function setPlayer(x,y,z) {
-        var opt = [Math.round(x),Math.round(y),Math.round(z)].join();
+        var opt = [x,y,z].join();
         mcSend("player.setPos(" + opt + ")");
     }
 
