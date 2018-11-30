@@ -95,12 +95,12 @@
     }
 
     function setBlock(x,y,z,block){
-        var opt = [x,y,z,block].join();
+        var opt = [parseInt(x),parseInt(y),parseInt(z),block].join();
         mcSend("world.setBlock(" + opt + ")");
     }
 
     function setPlayer(x,y,z) {
-        var opt = [x,y,z].join();
+        var opt = [parseInt(x),parseInt(y),parseInt(z)].join();
         mcSend("player.setPos(" + opt + ")");
     }
 
