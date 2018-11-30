@@ -168,14 +168,13 @@
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-          [' ', '%s にせつぞく ', 'connect', 'localhost' ],
+          [' ', '%sにせつぞく ', 'connect', 'localhost' ],
           ['r', 'せつぞくさき', 'connect_url'  ],
-          [' ', '%s とチャットでいう', 'postToChat', 'Hello!' ],
-          ['R', 'X%n Y%n Z%n のブロックをしらべる', 'getBlock', 0,0,0 ],
-          [' ', 'X%n Y%n Z%n を %n のブロックにする', 'setBlock', 0,0,0,0 ],
-          [' ', 'プレイヤーを X%n Y%n Z%n にうごかす', 'setPlayer', 0,0,0,0 ],
-          ['w', 'プレイヤーのばしょ', 'getPlayerPos'],
-          ['r', 'プレイヤーの %m.pos ざひょう', 'playerXYZ', 'x'],
+          [' ', '%sとチャットでいう', 'postToChat', 'こんにちは' ],
+          ['R', 'X%nY%nZ%nのブロックばんごう', 'getBlock', 0,0,0 ],
+          [' ', 'X%nY%nZ%nをばんごう%nのブロックにする', 'setBlock', 0,0,0,0 ],
+          [' ', 'プレイヤーをX%nY%nZ%nにうごかす', 'setPlayer', 0,0,0,0 ],
+          ['r', 'プレイヤーの%m.posざひょう', 'playerXYZ', 'x'],
           [' ', '(DBG)RawMsg %s', 'sendRawMsg', '' ], // for Extension Developper
         ],
         menus: {
