@@ -1,6 +1,6 @@
 # これは何？
 
-https://github.com/nguchi/scratchXminecraft のひらがな版です。
+https://github.com/t-kawamorita/scratchXminecraft のひらがな版です。
 
 ## 使用方法
 1. マインクラフトをインストールする。
