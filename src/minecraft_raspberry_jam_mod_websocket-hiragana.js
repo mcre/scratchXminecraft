@@ -154,7 +154,6 @@
     ext.postToChat   = postToChat;
     ext.getBlock     = getBlock;
     ext.setBlock     = setBlock;
-    ext.setBlocks    = setBlocks;
     ext.setPlayer    = setPlayer;
     ext.getPlayerPos = getPlayerPos;
     ext.playerXYZ    = getPlayerYXZ;
