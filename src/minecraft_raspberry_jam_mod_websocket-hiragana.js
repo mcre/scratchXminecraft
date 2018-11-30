@@ -171,8 +171,8 @@
           [' ', '%s にせつぞく ', 'connect', 'localhost' ],
           ['r', 'せつぞくさき', 'connect_url'  ],
           [' ', '%s とチャットでいう', 'postToChat', 'こんにちは' ],
-          ['R', ' X %n Y %n Z %n のブロックばんごう', 'getBlock', 0,0,0 ],
-          [' ', ' X %n Y %n Z %n をばんごう %n のブロックにする', 'setBlock', 0,0,0,0 ],
+          ['R', 'ざひょう X %n Y %n Z %n のブロックばんごう', 'getBlock', 0,0,0 ],
+          [' ', 'ざひょう X %n Y %n Z %n をばんごう %n のブロックにする', 'setBlock', 0,0,0,0 ],
           [' ', 'プレイヤーをX %n Y %n Z %n にうごかす', 'setPlayer', 0,0,0,0 ],
           ['r', 'プレイヤーの %m.pos ざひょう', 'playerXYZ', 'x'],
           [' ', '(DBG)RawMsg %s', 'sendRawMsg', '' ], // for Extension Developper
