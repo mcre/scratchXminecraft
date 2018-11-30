@@ -1,0 +1,8 @@
+title: Scratchxminecraft
+description: ScratchX Extension for Minecraft Raspbery Jam Mod
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
