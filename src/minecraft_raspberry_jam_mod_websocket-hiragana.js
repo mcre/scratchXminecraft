@@ -174,7 +174,8 @@
           ['R', 'ざひょう X %n Y %n Z %n のブロックばんごう', 'getBlock', 0,0,0 ],
           [' ', 'ざひょう X %n Y %n Z %n をばんごう %n のブロックにする', 'setBlock', 0,0,0,0 ],
           [' ', 'プレイヤーをX %n Y %n Z %n にうごかす', 'setPlayer', 0,0,0,0 ],
-          ['r', 'プレイヤーの %m.pos ざひょう', 'playerXYZ', 'x'],
+          ['w', 'プレイヤーのざひょうデータをあたらしくする', 'getPlayerPos'],
+          ['r', 'プレイヤーの %m.pos ざひょうデータ', 'playerXYZ', 'x'],
           [' ', '(DBG)RawMsg %s', 'sendRawMsg', '' ], // for Extension Developper
         ],
         menus: {
