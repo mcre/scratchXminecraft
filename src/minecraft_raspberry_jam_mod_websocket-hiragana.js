@@ -94,9 +94,14 @@
         mcSendWCB(msg, getb_cb);
     }
 
-    function setBlock(x,y,z,block){
-        var opt = [parseInt(x),parseInt(y),parseInt(z),block].join();
+    function setBlock(x,y,z,block,data){
+        var opt = [parseInt(x),parseInt(y),parseInt(z),block,data].join();
         mcSend("world.setBlock(" + opt + ")");
+    }
+
+    function setBlocks(x1,y1,z1,x2,y2,z2,block,data){
+        var opt = [ x1, y1, z1, x2, y2, z2, block, data].join();
+        mcSend( "world.setBlocks(" + opt + ")" );
     }
 
     function setPlayer(x,y,z) {
@@ -154,6 +159,7 @@
     ext.postToChat   = postToChat;
     ext.getBlock     = getBlock;
     ext.setBlock     = setBlock;
+    ext.setBlocks    = setBlocks;
     ext.setPlayer    = setPlayer;
     ext.getPlayerPos = getPlayerPos;
     ext.playerXYZ    = getPlayerYXZ;
@@ -166,7 +172,8 @@
           ['r', 'せつぞくさき', 'connect_url'  ],
           [' ', '%s とチャットでいう', 'postToChat', 'こんにちは' ],
           ['R', 'ざひょう X %n Y %n Z %n のブロックばんごう', 'getBlock', 0,0,0 ],
-          [' ', 'ざひょう X %n Y %n Z %n をばんごう %n のブロックにする', 'setBlock', 0,0,0,0 ],
+          [' ', 'ざひょう X %n Y %n Z %n にばんごう %n %n のブロックをおく', 'setBlock', 0,0,0,0,0 ],
+          [' ', 'ざひょう X %n Y %n Z %n から X %n Y %n Z %n までばんごう %n %n のブロックをおく', 'setBlocks', 0,0,0,0,0,0,0,0 ],
           [' ', 'プレイヤーをX %n Y %n Z %n にうごかす', 'setPlayer', 0,0,0,0 ],
           ['w', 'プレイヤーのざひょうデータをあたらしくする', 'getPlayerPos'],
           ['r', 'プレイヤーの %m.pos ざひょうデータ', 'playerXYZ', 'x'],
